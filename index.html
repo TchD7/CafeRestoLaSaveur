@@ -33,6 +33,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Accueil</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="plat.html" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Nous contacter</a></li>
 
@@ -69,7 +70,7 @@
                     <p class="about__description"> Nous cuisinons de beau plats, faites confiance &agrave; notre service traiteur tr&egrave;s dynamique pour vos &eacute;v&egrave;nements, nous offrons des services de qualité &agrave; la port&eacute; de tous visiter nous de mardi &aacute;
                         dimanche.
                     </p>
-                    <a href="#" class="button">Explorer nos meilleurs plats</a>
+                    <a href="plat.html" class="button">Explorer nos meilleurs plats</a>
                 </div>
 
                 <img src="assets/img/apropos.jpeg" alt="" class="about__img">
@@ -419,13 +420,7 @@
                     <a href="#" class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
                         /></a>
                 </div>
-
-
             </div>
-            <div class="pt-5 m-3 container">
-                <a href="plat.html" class="">Voir plus de plats</a>
-            </div>
-
         </section>
         <!--========== CONTACT US ==========-->
         <section class="contact section bd-container" id="contact">
@@ -449,14 +444,9 @@
                             <textarea name="message" type="message" id="" cols="60" rows="10"></textarea>
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn">Envoyer</button>
+                            <button type="submit" class="envoie">Envoyer</button>
                         </div>
-
-
                     </form>
-
-
-
                 </div>
             </div>
         </section>
@@ -511,26 +501,6 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
