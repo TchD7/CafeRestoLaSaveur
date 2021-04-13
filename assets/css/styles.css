@@ -712,8 +712,8 @@ img {
 
 .container {
     position: relative;
-    width: 60%;
-    margin: auto;
+    width: 80%;
+    margin-left: 22rem;
 }
 
 .container input {
@@ -722,12 +722,13 @@ img {
 
 .container textarea {
     height: 212px;
+    width: 50%;
 }
 
 @media screen and (max-width:700px) {
     .container {
         margin-left: 0.75rem;
-        width: 60%;
+        width: 80%;
     }
     .container input {
         width: 100%;
