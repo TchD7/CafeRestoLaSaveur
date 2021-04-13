@@ -99,6 +99,13 @@ const sr = ScrollReveal({
     reset: true
 });
 
+function sendWa() {
+    var msgInput = document.getElementById("msgInput").value;
+    var tonNumero = "22899447328";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput}`);
+
+}
+
 /*sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
             .services__content, .menu__content,
