@@ -720,6 +720,10 @@ img {
     width: 50%;
 }
 
+.container textarea {
+    height: 212px;
+}
+
 @media screen and (max-width:700px) {
     .container {
         margin-left: 0.75rem;
@@ -729,6 +733,7 @@ img {
         width: 100%;
     }
     .container textarea {
-        width: auto;
+        height: 80px;
+        width: 100%;
     }
 }
