@@ -710,4 +710,25 @@ img {
     background-color: var(--first-color-alt)
 }
 
-.
+.container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.container input {
+    width: 50%;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        margin-left: 0.75rem;
+        width: 60%;
+    }
+    .container input {
+        width: 100%;
+    }
+    .container textarea {
+        width: auto;
+    }
+}
