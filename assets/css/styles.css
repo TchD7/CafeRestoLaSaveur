@@ -696,3 +696,18 @@ img {
         width: 100%;
     }
 }
+
+.envoie {
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+    border: none;
+}
+
+.envoie:hover {
+    background-color: var(--first-color-alt)
+}
+
+.
