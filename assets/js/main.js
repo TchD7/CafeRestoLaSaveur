@@ -92,12 +92,12 @@ function sendWa() {
 
 /*===========================envoie de mail=========*/
 function sendmail() {
-
+    var nom = $('#nom').val();
     var email = $('#mail').val();
     var number = $('#number').val();
     var message = $('#message').val();
     // var body = $('#body').val();
-    var Body = 'mail: ' + email + '<br> number: ' + number + '<br>message: ' + message;
+    var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number + '<br>message: ' + message;
     Email.send({
         SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
         To: 'edisontchondo@gmail.com',
