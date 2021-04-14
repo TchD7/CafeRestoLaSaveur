@@ -90,6 +90,35 @@ function sendWa() {
 
 }
 
+/*===========================envoie de mail=========*/
+function sendmail() {
+
+    var email = $('#mail').val();
+    var number = $('#number').val();
+    var message = $('#message').val();
+    // var body = $('#body').val();
+    var Body = 'mail: ' + email + '<br> number: ' + number + '<br>message: ' + message;
+    Email.send({
+        SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        To: 'edisontchondo@gmail.com',
+        From: "you@isp.com",
+        Subject: "Nouveau message depuis le siteweb de la Saveur",
+        Body: Body
+    }).then(
+        message => {
+            //console.log (message);
+            if (message == 'OK') {
+                alert('Votre message a été envoyer avec succes.');
+            } else {
+                console.error(message);
+                alert('Erreur veillez ressayer. ')
+
+            }
+
+        }
+    );
+}
+
 /*sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
             .services__content, .menu__content,

@@ -487,24 +487,6 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        function sendmail() {
-
-            var email = $('#mail').val();
-            var number = $('#number').val();
-            var message = $('#message').val();
-            // var body = $('#body').val();
-            var Body = 'mail: ' + email + '<br>number: ' + number + '<br>message: ' + message;
-            Email.send({
-                SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-                To: 'them@website.com',
-                From: "you@isp.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-    </script>
 </body>
 
 </html>
