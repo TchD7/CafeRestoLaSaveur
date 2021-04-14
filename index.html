@@ -54,7 +54,7 @@
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
                     <h1 class="home__title">CAFE-RESTO LA SAVEUR</h1>
-                    <h2 class="home__subtitle">Essayer la meilleur cuisine europ&eacute;ene & <br> afrcaine.</h2>
+                    <h2 class="home__subtitle">Essayer la meilleure cuisine europ&eacute;ene & <br> afrcaine.</h2>
                     <a href="#menu" class="button">Voir le menu</a>
                 </div>
 
@@ -417,15 +417,15 @@
                 </div>
             </div>
         </section>
-        <form class="container">
+        <form method="POST" class="container" action="javascript:sendmail()">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Adresse Mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" name="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec qui que ce soit.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputNumber" class="form-label">Num&eacute;ro de t&eacute;l&eacute;phone</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
+                <input type="text" name="number" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <label for="exampleInputMessage" class="form-label">M&eacute;ssage</label> <br>
@@ -483,12 +483,28 @@
             </div>
         </div>
     </footer>
-
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--========== MAIN JS ==========-->
+    <!--========== JS ==========-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function sendmail() {
+
+            var email = $('#mail').val();
+            var number = $('#number').val();
+            var message = $('#message').val();
+            // var body = $('#body').val();
+            var Body = 'mail: ' + email + '<br>number: ' + number + '<br>message: ' + message;
+            Email.send({
+                SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+    </script>
 </body>
 
 </html>

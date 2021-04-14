@@ -85,7 +85,7 @@ const sr = ScrollReveal({
 
 function sendWa() {
     var msgInput = document.getElementById("msgInput").value;
-    var tonNumero = "22899447328";
+    var tonNumero = "22891786750";
     window.open(`https://wa.me/${tonNumero}?text=${msgInput}`);
 
 }
