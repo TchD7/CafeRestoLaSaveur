@@ -100,8 +100,8 @@ function sendmail() {
     var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number + '<br>message: ' + message;
     Email.send({
         SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-        To: 'edisontchondo@gmail.com',
-        From: "edisontchondo@gmail.com",
+        To: 'Caferestolasaveur@gmail.com',
+        From: "Caferestolasaveur@gmail.com",
         Subject: "Nouveau message depuis le siteweb de la Saveur",
         Body: Body
     }).then(
