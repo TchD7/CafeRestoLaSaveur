@@ -196,6 +196,49 @@ function sendWa02() {
     var tonNumero = "22891786750";
     window.open(`https://wa.me/${tonNumero}?text=${msgInput02}`);
 }
+
+function sendWa21() {
+    var msgInput21 = document.getElementById("msgInput21").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput21}`);
+}
+
+function sendWa20() {
+    var msgInput20 = document.getElementById("msgInput20").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput20}`);
+}
+
+function sendWa19() {
+    var msgInput19 = document.getElementById("msgInput19").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput19}`);
+}
+
+function sendWa18() {
+    var msgInput18 = document.getElementById("msgInput18").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput18}`);
+}
+
+function sendWa17() {
+    var msgInput17 = document.getElementById("msgInput17").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput17}`);
+}
+
+function sendWa16() {
+    var msgInput16 = document.getElementById("msgInput16").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput16}`);
+}
+
+function sendWa24() {
+    var msgInput24 = document.getElementById("msgInput24").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput24}`);
+}
+
 /*===========================envoie de mail=========*/
 function sendmail() {
     var nom = $('#nom').val();
