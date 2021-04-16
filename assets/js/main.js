@@ -87,9 +87,115 @@ function sendWa() {
     var msgInput = document.getElementById("msgInput").value;
     var tonNumero = "22891786750";
     window.open(`https://wa.me/${tonNumero}?text=${msgInput}`);
-
 }
 
+function sendWa1() {
+    var msgInput1 = document.getElementById("msgInput1").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput1}`);
+}
+
+function sendWa2() {
+    var msgInput2 = document.getElementById("msgInput2").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput2}`);
+}
+
+function sendWa3() {
+    var msgInput3 = document.getElementById("msgInput3").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput3}`);
+}
+
+function sendWa4() {
+    var msgInput4 = document.getElementById("msgInput4").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput4}`);
+}
+
+function sendWa5() {
+    var msgInput5 = document.getElementById("msgInput5").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput5}`);
+}
+
+function sendWa6() {
+    var msgInput6 = document.getElementById("msgInput6").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput6}`);
+}
+
+function sendWa7() {
+    var msgInput7 = document.getElementById("msgInput7").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput7}`);
+}
+
+function sendWa8() {
+    var msgInput8 = document.getElementById("msgInput8").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput8}`);
+}
+
+function sendWa9() {
+    var msgInput9 = document.getElementById("msgInput9").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput9}`);
+}
+
+function sendWa10() {
+    var msgInput10 = document.getElementById("msgInput10").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput10}`);
+}
+
+function sendWa11() {
+    var msgInput11 = document.getElementById("msgInput11").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput11}`);
+}
+
+function sendWa12() {
+    var msgInput12 = document.getElementById("msgInput12").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput12}`);
+}
+
+function sendWa13() {
+    var msgInput13 = document.getElementById("msgInput13").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput13}`);
+}
+
+function sendWa14() {
+    var msgInput14 = document.getElementById("msgInput14").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput14}`);
+}
+
+function sendWa15() {
+    var msgInput15 = document.getElementById("msgInput15").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput15}`);
+}
+
+function sendWa0() {
+    var msgInput0 = document.getElementById("msgInput0").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput0}`);
+}
+
+function sendWa01() {
+    var msgInput01 = document.getElementById("msgInput01").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput01}`);
+}
+
+function sendWa02() {
+    var msgInput02 = document.getElementById("msgInput02").value;
+    var tonNumero = "22891786750";
+    window.open(`https://wa.me/${tonNumero}?text=${msgInput02}`);
+}
 /*===========================envoie de mail=========*/
 function sendmail() {
     var nom = $('#nom').val();
