@@ -1,262 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+/*==================== SHOW MENU ====================*/ const showMenu = (toggleId, navId) => { const toggle = document.getElementById(toggleId), nav = document.getElementById(navId) if (toggle && nav) { toggle.addEventListener('click', () => { nav.classList.toggle('show-menu')
+}) } } showMenu('nav-toggle', 'nav-menu') /*==================== REMOVE MENU MOBILE ====================*/ const navLink = document.querySelectorAll('.nav__link') function linkAction() { const navMenu = document.getElementById('nav-menu') navMenu.classList.remove('show-menu')
+} navLink.forEach(n => n.addEventListener('click', linkAction)) /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/ const sections = document.querySelectorAll('section[id]') function scrollActive() { const scrollY = window.pageYOffset
+sections.forEach(current => { const sectionHeight = current.offsetHeight const sectionTop = current.offsetTop - 50; sectionId = current.getAttribute('id') if (scrollY > sectionTop && scrollY
+<=s ectionTop + sectionHeight) { document.querySelector(
+    '.nav__menu a[href*=' + sectionId + ']').classList.add( 'active-link') } else { document.querySelector( '.nav__menu a[href*=' + sectionId + ']').classList.remove( 'active-link') } }) } window.addEventListener( 'scroll', scrollActive) /*====================C HANGE BACKGROUND
+    HEADER====================*/ function scrollHeader() { const nav=d ocument.getElementById( 'header') if (this.scrollY>= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header') } window.addEventListener('scroll', scrollHeader) /*==================== SHOW SCROLL TOP ====================*/ function scrollTop() { const scrollTop = document.getElementById('scroll-top');
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll') } window.addEventListener('scroll', scrollTop) /*==================== DARK LIGHT THEME ====================*/ const themeButton = document.getElementById('theme-button')
+    const darkTheme = 'dark-theme' const iconTheme = 'bx-sun' const selectedTheme = localStorage.getItem('selected-theme') const selectedIcon = localStorage.getItem('selected-icon') const getCurrentTheme = () => document.body.classList.contains(darkTheme)
+    ? 'dark' : 'light' const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun' if (selectedTheme) { document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme) themeButton.classList[selectedIcon
+    === 'bx-moon' ? 'add' : 'remove'](iconTheme) } themeButton.addEventListener('click', () => { document.body.classList.toggle(darkTheme) themeButton.classList.toggle(iconTheme) localStorage.setItem('selected-theme', getCurrentTheme()) localStorage.setItem('selected-icon',
+    getCurrentIcon()) }) /*==================== SCROLL REVEAL ANIMATION ====================*/ const sr = ScrollReveal({ origin: 'top', distance: '30px', duration: 2000, reset: true }); function sendWa() { var msgInput = document.getElementById("msgInput").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput}`); } function sendWa1() { var msgInput1 = document.getElementById("msgInput1").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput1}`);
+    } function sendWa2() { var msgInput2 = document.getElementById("msgInput2").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput2}`); } function sendWa3() { var msgInput3 = document.getElementById("msgInput3").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput3}`); } function sendWa4() { var msgInput4 = document.getElementById("msgInput4").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput4}`);
+    } function sendWa5() { var msgInput5 = document.getElementById("msgInput5").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput5}`); } function sendWa6() { var msgInput6 = document.getElementById("msgInput6").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput6}`); } function sendWa7() { var msgInput7 = document.getElementById("msgInput7").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput7}`);
+    } function sendWa8() { var msgInput8 = document.getElementById("msgInput8").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput8}`); } function sendWa9() { var msgInput9 = document.getElementById("msgInput9").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput9}`); } function sendWa10() { var msgInput10 = document.getElementById("msgInput10").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput10}`);
+    } function sendWa11() { var msgInput11 = document.getElementById("msgInput11").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput11}`); } function sendWa12() { var msgInput12 = document.getElementById("msgInput12").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput12}`); } function sendWa13() { var msgInput13 = document.getElementById("msgInput13").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput13}`);
+    } function sendWa14() { var msgInput14 = document.getElementById("msgInput14").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput14}`); } function sendWa15() { var msgInput15 = document.getElementById("msgInput15").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput15}`); } function sendWa0() { var msgInput0 = document.getElementById("msgInput0").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput0}`);
+    } function sendWa01() { var msgInput01 = document.getElementById("msgInput01").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput01}`); } function sendWa02() { var msgInput02 = document.getElementById("msgInput02").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput02}`); } function sendWa21() { var msgInput21 = document.getElementById("msgInput21").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput21}`);
+    } function sendWa20() { var msgInput20 = document.getElementById("msgInput20").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput20}`); } function sendWa19() { var msgInput19 = document.getElementById("msgInput19").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput19}`); } function sendWa18() { var msgInput18 = document.getElementById("msgInput18").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput18}`);
+    } function sendWa17() { var msgInput17 = document.getElementById("msgInput17").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput17}`); } function sendWa16() { var msgInput16 = document.getElementById("msgInput16").value;
+    var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput16}`); } function sendWa24() { var msgInput24 = document.getElementById("msgInput24").value; var tonNumero = "22891786750"; window.open(`https://wa.me/${tonNumero}?text=${msgInput24}`);
+    } /*===========================envoie de mail=========*/ function sendmail() { var nom = $('#nom').val(); var email = $('#mail').val(); var number = $('#number').val(); var message = $('#message').val(); // var body = $('#body').val(); var Body =
+    'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number + '<br>message: ' + message; Email.send({ SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f", To: 'Caferestolasaveur@gmail.com', From: "Caferestolasaveur@gmail.com", Subject: "Nouveau
+    message depuis le siteweb de la Saveur", Body: Body }).then( message => { //console.log (message); if (message == 'OK') { alert('Votre message a été envoyer avec succes.'); } else { console.error(message); alert('Erreur veillez ressayer. ') } } );
+    } /*sr.reveal(`.home__data, .home__img, .about__data, .about__img, .services__content, .menu__content, .app__data, .app__img, .contact__data, .contact__button, .footer__content`, { interval: 200 }) /*==============================acordeon==========*/f%C3%A9-Resto-La-Saveur-115254020170945/"
+    target="_blank" class="footer__social"><i class='bx bxl-facebook'></i></a>
+    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    </div>
 
-    <!--========== BOX ICONS ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <div class="footer__content">
+        <h3 class="footer__title">Services</h3>
+        <ul>
+            <li><a href="#" class="footer__link">Livraison</a></li>
+            <li><a href="#" class="footer__link">Prix</a></li>
 
-    <!--========== CSS ==========-->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" type="image/png" href="assets/img/icon.png" />
+        </ul>
+    </div>
 
-    <title>Café-resto la Saveur</title>
-</head>
+    <div class="footer__content">
+        <h3 class="footer__title">Informations</h3>
+        <ul>
 
-<body>
+            <li>
+                <a href="https://wa.me/22891786750" class="footer__link"> <i class='bx bxl-whatsapp'></i> Contact wathsapp</a>
+            </li>
+            <li>
+                <a href="#" class="footer__link"> <i class='bx bxs-home-smile'></i>Terms de services</a>
+            </li>
+        </ul>
+    </div>
 
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
-
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">LA SAVEUR</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Accueil</a></li>
-                    <li class="nav__item"><a href="index.html" class="nav__link">A propos</a></li>
-                    <li class="nav__item"><a href="index.html" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="plat.html" class="nav__link">Rec&egrave;ttes</a></li>
-                    <li class="nav__item"><a href="index.html" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="index.html" class="nav__link">Nous contacter</a></li>
-
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-    <main class="l-main">
-        <!--========== MENU ==========-->
-        <section class="menu section bd-container" id="menu">
-            <h2 class="section-title">Nos plats sp&eacute;ciaux</h2>
-
-            <div class="menu__container bd-grid">
-                <div class="menu__content">
-                    <img src="assets/img/plat5.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Salade sp&eacute;ciale maison</h3>
-                    <span class="menu__detail">Entr&eacute;</span>
-                    <span class="menu__preci">700 FCFA</span>
-                    <input type="text" id="msgInput" value="Salut! je souhaite commandé la Salade sp&eacute;ciale maison de 700FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa()" /></p>
-                </div>
-
-                <div class="menu__content">
-                    <img src="assets/img/plat10.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Pinon au poison</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1.000 FCFA</span>
-                    <input type="text" id="msgInput1" value="Salut! je souhaite commandé le Pinon au poisson de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa1()" /></p>
-                </div>
-
-                <div class="menu__content">
-                    <img src="assets/img/plat1.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Couscous au gras</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1000 FCFA</span>
-                    <input type="text" id="msgInput2" value="Salut! je souhaite commandé le couscous au gras de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa2()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat2.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Salade &#8545;</h3>
-                    <span class="menu__detail">Entrées</span>
-                    <span class="menu__preci">800 FCFA</span>
-                    <input type="text" id="msgInput3" value="Salut! je souhaite commandé le Salade &#8545; de 800FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa3()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat3.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Alloco au poulet</h3>
-                    <span class="menu__detail">Entr&eacute;es</span>
-                    <span class="menu__preci">1500 FCFA</span>
-                    <input type="text" id="msgInput4" value="Salut! je souhaite commandé du Alloco au poulet de 1500FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa4()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat4.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Koliko</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">700 FCFA</span>
-                    <input type="text" id="msgInput5" value="Salut! je souhaite commandé le Koliko de 700FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa5()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat6.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Riz cantonais &#8545;</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1.500 FCFA</span>
-                    <input type="text" id="msgInput6" value="Salut! je souhaite commandé le Riz cantonais &#8545; de 1.500FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa6()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat9.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Riz conatonais</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1.000 FCFA</span>
-                    <input type="text" id="msgInput7" value="Salut! je souhaite commandé le Riz cantonais de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa7()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat7.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Attiek&egrave; au poison</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1000 FCFA</span>
-                    <input type="text" id="msgInput8" value="Salut! je souhaite commandé l'Attiek&egrave; au poison de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa8()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat10.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Pinon au poisson</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1.000 FCFA</span>
-                    <input type="text" id="msgInput9" value="Salut! je souhaite commandé le Pinon au poisson de 800FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa9()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat9.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Riz cantonais</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1000 FCFA</span>
-                    <input type="text" id="msgInput10" value="Salut! je souhaite commandé le Riz cantonais de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa10()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat11.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Alloco au poisson</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">2000 FCFA</span>
-                    <input type="text" id="msgInput11" value="Salut! je souhaite commandé l'Alloco au poisson 2000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa11()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat12.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Frites au poisson</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1500 FCFA</span>
-                    <input type="text" id="msgInput12" value="Salut! je souhaite commandé le Frites au poisson de 1500FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa12()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat13.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Riz saut&eacute; au poulet</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1000 FCFA</span>
-                    <input type="text" id="msgInput13" value="Salut! je souhaite commandé le Riz saut&eacute; au poulet 1.000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa13()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat14.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Spaghetti blanc</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">600 FCFA</span>
-                    <input type="text" id="msgInput14" value="Salut! je souhaite commandé le Spagh&eacute;tti Blanc de 600FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa14()" /></p>
-                </div>
-                <div class="menu__content">
-                    <img src="assets/img/plat15.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Dj&eacute;koum&egrave; au poulet</h3>
-                    <span class="menu__detail">Plats chauds</span>
-                    <span class="menu__preci">1000 FCFA</span>
-                    <input type="text" id="msgInput15" value="Salut! je souhaite commandé le Dj&eacute;koum&egrave; au poulet de 1000FCFA " style="display:none">
-                    <p class="button menu__button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="
-                            onclick="sendWa15()" /></p>
-                </div>
-            </div>
-
-        </section>
-        <!--========== CONTACT US ==========-->
-    </main>
-
-    <!--========== FOOTER ==========-->
-    <footer class="footer section bd-container">
-        <div class="footer__container bd-grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">LA SAVEUR</a>
-                <span class="footer__description">Restaurant</span>
-                <div>
-                    <a href="https://www.facebook.com/Caf%C3%A9-Resto-La-Saveur-115254020170945/" target="_blank" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-
-                </div>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Services</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Livraison</a></li>
-                    <li><a href="#" class="footer__link">Prix</a></li>
-
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Informations</h3>
-                <ul>
-
-                    <li>
-                        <a href="https://wa.me/22891786750" class="footer__link"> <i class='bx bxl-whatsapp'></i> Contact wathsapp</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link"> <i class='bx bxs-home-smile'></i>Terms de services</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Adresse</h3>
-                <ul>
-                    <li> <i class='bx bxs-map'></i> Ago&eacute; Minamadu</li>
-                    <li> <i class='bx bxs-quote-single-right'></i>300m du Bar Oc&eacute;anos</li>
-                    <li><i class='bx bxs-phone'></i>91786750/90486195</li>
-                    <li>
-                        Caferestolasaveur@gmail.com</li>
-                </ul>
-            </div>
-        </div>
+    <div class="footer__content">
+        <h3 class="footer__title">Adresse</h3>
+        <ul>
+            <li> <i class='bx bxs-map'></i> Ago&eacute; Minamadu</li>
+            <li> <i class='bx bxs-quote-single-right'></i>300m du Bar Oc&eacute;anos</li>
+            <li><i class='bx bxs-phone'></i>91786750/90486195</li>
+            <li>
+                Caferestolasaveur@gmail.com</li>
+        </ul>
+    </div>
+    </div>
     </footer>
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 
-</body>
+    </body>
 
-</html>
+    </html>
