@@ -710,12 +710,6 @@ img {
     background-color: var(--first-color-alt)
 }
 
-.container {
-    position: relative;
-    width: 80%;
-    margin-left: 22rem;
-}
-
 .container input {
     width: 50%;
 }
